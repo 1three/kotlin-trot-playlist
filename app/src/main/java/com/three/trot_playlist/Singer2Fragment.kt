@@ -20,7 +20,7 @@ class Singer2Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =  inflater.inflate(R.layout.fragment_singer2, container, false)
+        val view = inflater.inflate(R.layout.fragment_singer2, container, false)
 
         // RecyclerView 연결
         val items = mutableListOf<String>()
@@ -34,7 +34,6 @@ class Singer2Fragment : Fragment() {
         items.add("내 마음의 사진")
         items.add("당신을 만나")
         items.add("월하가약")
-
 
         val rv = view.findViewById<RecyclerView>(R.id.singRV)
         val rvAdapter = RVAdapter(items)
